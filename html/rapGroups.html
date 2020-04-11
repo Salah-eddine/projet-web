@@ -6,6 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    Rap
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>image</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            
+        </tbody>
+    </table>
+    <button onclick="loadJsonx()">check</button>
+    <script>
+        console.log("maison");
+       function loadJsonx()
+        {
+            let xmlhttp = new XMLHttpRequest();
+            let url ="../groups.json";
+            xmlhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200)
+                {
+                    var reponse = JSON.parse(this.responseText);
+                    var rapGroups = reponse.rapGroups;
+                    var txt = "";
+
+                    for(i=0;i<rapGroups.length;i++)
+                    {
+                        txt+="<tr>"+"<td>"+rapGroups[i].name+"</td>"+"<td>"+rapGroups[i].miniDescription+"</td>"+"</tr>"
+                        
+                    }
+                    document.getElementById("tableBody").innerHTML = txtx
+                }
+            }
+            xmlhttp.open("GET",url,true);
+            xmlhttp.send();
+            
+        }
+    </script>
 </body>
 </html>

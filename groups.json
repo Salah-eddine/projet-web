@@ -1,0 +1,24 @@
+{
+    "rapGroups": [
+        {
+            "name": "iam",
+            "miniDescription": "groupe marseillais qui a fait un carton en france"
+        },
+        {
+            "name": "psy 4",
+            "miniDescription": "groupe marseillais de trois membre"
+        },
+        {
+            "name":"Arsenik",
+            "miniDescription":"groupe français de deux membre"
+        },
+        {
+            "name":"Fonky Family",
+            "miniDescription":"groupe de rap fr"
+        },
+        {
+            "name":"Section d'assaut",
+            "miniDescription": "groupe de rap fr de watib"
+        }
+    ]
+}
