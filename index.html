@@ -22,5 +22,25 @@
           <a href="./html/jazzGroups.html"><img src="./img/mainJazz.jpg" alt="Jazz" ></a>       
         </div>
     </div>
+    <h2>The XMLHttpRequest Object</h2>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+    <script>
+        
+        function loadDoc(){
+         var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function()
+        {
+            if(this.readyState == 4 && this.status == 200)
+            {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","./info.txt",false);
+        xmlhttp.send();
+    }
+    </script>
 </body>
 </html>
