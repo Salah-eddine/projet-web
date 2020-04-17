@@ -2,6 +2,7 @@ var imgContainer = document.getElementById("info-groups");
 var arrimg = imgContainer.getElementsByTagName("img");
 var arrDescription = imgContainer.getElementsByTagName("p");
 setImgSize()
+setParagraph()
 var xhr = new XMLHttpRequest();
 function getJson(){
     xhr.onreadystatechange = function()
@@ -13,10 +14,11 @@ function getJson(){
             for(i =0;i<rgroups.length;i++)
             {
                 arrimg[i].setAttribute("src",rgroups[i].image);
+                arrDescription[i].innerHTML = rgroups[i].miniDescription;
             }
         }
     }
-    xhr.open("GET","../json/groups.json",true);
+    xhr.open("GET","../../json/groups.json",true);
     xhr.send();
 }
 
@@ -25,5 +27,11 @@ function setImgSize(){
     {
         arrimg[i].style.width = "284px"
         arrimg[i].style.height= "177px"
+    }
+}
+function setParagraph(){
+    for(i=0;i<arrDescription.length;i++)
+    {
+        arrDescription[i].style.textAlign = "center";
     }
 }

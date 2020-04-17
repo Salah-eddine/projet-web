@@ -1,7 +1,10 @@
 .bg-mic{
-    background-image: url("../../img/mic-c.jpg");
-    background-position: center; 
-    height: 600px;
+    background-image: url("../../img/rap-bg.png"); 
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 .groups-liste
 {
@@ -15,8 +18,18 @@
 }
 body{
     margin: 0px;
-}
-#info-groups{
+}   
+
+.row{
     display: flex;
+}
+.row>div{
+   
+    float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  font-family: 'Viga', sans-serif;
 }
 
