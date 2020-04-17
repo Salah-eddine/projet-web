@@ -34,10 +34,11 @@
 
                     for(i=0;i<rapGroups.length;i++)
                     {
-                        txt+="<tr>"+"<td>"+rapGroups[i].name+"</td>"+"<td>"+rapGroups[i].miniDescription+"</td>"+"</tr>"
+                        txt+="<tr>"+"<td>"+rapGroups[i].name+"</td>"+"<td>"+rapGroups[i].miniDescription+"</td>"+"<td>"+"<img src='"+rapGroups[i].image+"'/>"+"</td>"+"</tr>";
+                        
                         
                     }
-                    document.getElementById("tableBody").innerHTML = txtx
+                    document.getElementById("tableBody").innerHTML = txt
                 }
             }
             xmlhttp.open("GET",url,true);
