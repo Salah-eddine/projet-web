@@ -1,0 +1,66 @@
+{
+    "iam": [
+        { "date": "1990", "titre": "Concept" },
+        { "date": "1991", "titre": "... de la planète Mars" },
+        { "date": "1993", "titre": "Ombre est lumière" },
+        { "date": "1997", "titre": "L'école du micro d'argent" },
+        { "date": "2003", "titre": "Revoir un printemps" },
+        { "date": "2005", "titre": "Live au Dôme de Marseille" },
+        { "date": "2007", "titre": "Saison 5" },
+        { "date": "2008", "titre": "Retour aux pyramides" },
+        { "date": "2013", "titre": "... IAM" },
+        { "date": "2013", "titre": "Arts Martiens" },
+        { "date": "2017", "titre": "Révolution" },
+        { "date": "2019", "titre": "Yasuke" }
+    ],
+    "psy 4 de la rime": [
+        { "date": "2002", "titre": "Le son des bandits" },
+        { "date": "2002", "titre": "Block Party" },
+        { "date": "2003", "titre": "La Vengeance aux deux visages" },
+        { "date": "2003", "titre": "Sale bête ~Live" },
+        { "date": "2005", "titre": "Le Monde est..." },
+        { "date": "2006", "titre": "Enfants de la Lune" },
+        { "date": "2006", "titre": "Effet de style, effet de mode" },
+        { "date": "2008", "titre": "Jeunesse France" },
+        { "date": "2008", "titre": "Les Cités d'or" },
+        { "date": "2008", "titre": "On sait mais on fait" },
+        { "date": "2013", "titre": "Crise de nerfs" },
+        { "date": "2013", "titre": "Le Retour des Blocks" },
+        { "date": "2013", "titre": "Visage de la honte" },
+        { "date": "2013", "titre": "Follow me" },
+        { "date": "2013", "titre": "Le temps d'un instant" },
+        { "date": "2013", "titre": "Un Marseillais à Paris" }
+    ],
+    "Arsenik": [
+        { "date": "1998", "titre": "Quelques gouttes suffisent..." },
+        { "date": "1998", "titre": "Le Secteur Ä" },
+        { "date": "1999", "titre": "Racines..." },
+        { "date": "1999", "titre": "Le 15 mai 1999" },
+        { "date": "2000", "titre": "Secteur Ä All Stars" },
+        { "date": "2002", "titre": "Quelque chose a survécu..." },
+        { "date": "2005", "titre": "ND" },
+        { "date": "2007", "titre": "S'il en reste quelque chose..." },
+        { "date": "2009", "titre": "Africa" },
+        { "date": "2018", "titre": "Best of Secteur Ä" }
+
+    ],
+    "Fonky Family": [
+        { "date": "1998", "titre": "Si Dieu veut..." },
+        { "date": "1999", "titre": "Hors Série Volume 1" },
+        { "date": "2001", "titre": "Art de Rue" },
+        { "date": "2001", "titre": "Hors Série Volume 2" },
+        { "date": "2003", "titre": "Live au Dôme de Marseille" },
+        { "date": "2006", "titre": " Marginale Musique" }
+
+    ],
+    "Sexion d'assaut": [
+        { "date": "2008", "titre": "Le renouveau" },
+        { "date": "2009", "titre": "L'Écrasement de tête" },
+        { "date": "2010", "titre": "L'École des points vitaux" },
+        { "date": "2011", "titre": "Les Chroniques du 75 Vol. 2" },
+        { "date": "2012", "titre": "L'Apogée" },
+        { "date": "2014", "titre": "La Maxi Dépouille" },
+        { "date": "2020", "titre": "Le retour des Rois" }
+
+    ]
+}

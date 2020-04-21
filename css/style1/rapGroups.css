@@ -1,35 +1,55 @@
-.bg-mic{
-    background-image: url("../../img/rap-bg.png"); 
+.bg-mic {
+    background-image: url("../../img/rap-bg.png");
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
-.groups-liste
-{
+
+.groups-liste {
     text-align: center;
-     
 }
-.groups-liste>p
-{
-    font-family: 'Chango', cursive;
-    font-size: 50px; 
-}
-body{
-    margin: 0px;
-}   
 
-.row{
+.groups-liste>p {
+    font-family: 'Chango', cursive;
+    font-size: 50px;
+}
+
+body {
+    margin: 0px;
+}
+
+.row {
     display: flex;
 }
-.row>div{
-   
+
+.row>div {
     float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-  text-align: center;
-  font-family: 'Viga', sans-serif;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
 }
 
+.container {
+    font-family: 'Viga', sans-serif;
+}
+
+.container>div {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.span1 {
+    color: gray;
+}
+
+.ficheImg {
+    padding-top: 15px;
+}
+
+.disco {
+    padding-bottom: 30px;
+}

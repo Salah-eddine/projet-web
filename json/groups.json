@@ -1,29 +1,44 @@
 {
-    "rapGroups": [
-        {
+    "rapGroups": [{
             "name": "iam",
-            "miniDescription": "Iam est un groupe de hip-hop français,originaire de Marseille, dans les Bouches-du-Rhône. Formé en 1988",
-            "image": "../../img/iam.jpg"
+            "miniDescription": "Iam est un groupe de hip-hop français,originaire de Marseille, dans les Bouches-du-Rhône. Formé en 1988.",
+            "image": "../../img/iam.jpg",
+            "imagePerso": "../../img/iamFiche.jpg",
+            "lien": "./iam.html",
+            "description": "IAM est un groupe de hip-hop français, originaire de Marseille, dans les Bouches-du-Rhône. Formé en 1988, il se compose d'Akhenaton (Philippe Fragione) et Shurik'n (Geoffroy Mussard) au chant, de Kheops (Éric Mazel), Imhotep (Pascal Perez), Kephren (François Mendy) aux platines, et anciennement de Freeman (Malek Brahimi).            Le groupe publie son premier album en 1990 sous forme d 'une cassette enregistrée en autoproduction1 (Concept) puis en studio avec … de la planète Mars en 1991, qui bénéficie d'            un certain écho et voit IAM être diffusé dans les médias(radio, télé...) dont plusieurs apparitions dans l 'émission française RapLine (dont le groupe avait d'            ailleurs composé quelques mois plus tôt le générique).Le groupe publie son troisième album Ombre est lumière, en 1993, qui lui permet d 'accroître encore un peu plus sa popularité et contient la chanson qui remporte un important succès national, Je danse le mia, n°1 des hit-parades durant huit semaines en 1994. Suit un quatrième opus, L'        École du micro d 'argent, publié en 1997, qui remporte deux récompenses aux Victoires de la musique et est certifié disque de diamant.        IAM revient en 2003 avec la sortie de son cinquième album, Revoir un printemps, dont l 'accueil est mitigé, donc avec les années de recul, perçu comme étant le projet le plus abouti du groupe. Saison 5, le sixième album du groupe, est publié en avril 2007. Le septième album studio du groupe, Arts martiens, est publié en avril 2013. Il est suivi la même année, de l'album...IAM.En 2017, le groupe sort son album Rêvolution.En 2019, le groupe sort son dixième album Yasuke. IAM est généralement considéré comme l 'un des pionniers du hip-hop français ainsi que comme l' un des meilleurs groupes de son histoire."
+
         },
         {
-            "name": "psy 4",
+            "name": "psy 4 de la rime",
             "miniDescription": "Psy 4 de la Rime est un groupe de hip-hop français, originaire de Marseille, dans les Bouches-du-Rhône. Il est composé de quatre amis d'enfance dont trois cousins rappeurs originaires de l'archipel des Comores",
-            "image": "../../img/psy4.jpg"
+            "image": "../../img/psy4.jpg",
+            "lien": "./psy.html",
+            "description": "Psy 4 de la Rime est un groupe de hip-hop français, originaire de Marseille, dans les Bouches-du-Rhône. Il est composé de quatre amis d'enfance dont trois cousins rappeurs originaires de l'archipel des Comores : Soprano (Saïd M'Roumbaba), Alonzo (Kassim Djae), Vincenzo (Iliassa Issilame), ainsi que le DJ Sya Styles (Rachid Aït Baar) d'origine marocaine.Le groupe publie son premier album, Le son des bandits, en 2002. Il est suivi d'un deuxième opus intitulé Enfants de la Lune, publié en septembre 2005. Le groupe publie son troisième album intitulé Les Cités d'or sur le label Barclay, en mai 2008. Leur quatrième album, Quatrième dimension, est publié le 1er avril 20132 après cinq ans d’absence. En octobre 2015, le décès de Sya Styles est annoncé ; Soprano déclare qu'il sera alors impossible de faire un album des Psy4 à 3 dans le groupe, sans Sya Styles qui était tout aussi engagé dans le groupe que ses camarades rappeurs. Les membres du groupe ne se perdent cependant pas de vue. Soprano et Alonzo font souvent des collaborations. Vincenzo se faisant plus discret est quand même présent sur l'album Phoenix de Soprano sur le morceau Le coach.Alonzo cependant a entrouvert la porte à un retour lors de la promotion de son album Stone. Un retour est prévu mais non daté.",
+            "imagePerso": "../../img/psy4Fiche.jpg"
         },
         {
-            "name":"Arsenik",
-            "miniDescription":"Ärsenik est un groupe de rap français, membre du collectif Secteur Ä (d'où le « Ä ») et originaire du quartier de la Cerisaie à Villiers-Le-Bel, dans le Val-d'Oise. Formé en 1992,",
-            "image": "../../img/arsenik.jpg"
+            "name": "Arsenik",
+            "miniDescription": "Ärsenik est un groupe de rap français, membre du collectif Secteur Ä (d'où le « Ä ») et originaire du quartier de la Cerisaie à Villiers-Le-Bel, dans le Val-d'Oise. Formé en 1992,",
+            "image": "../../img/arsenik.jpg",
+            "lien": "arsenik.html",
+            "description": "Ärsenik est un groupe de rap français, membre du collectif Secteur Ä (d'où le « Ä ») et originaire du quartier de la Cerisaie à Villiers-Le-Bel, dans le Val-d'Oise. Formé en 1992, Ärsenik se compose actuellement de deux frères d'origine congolaise, Lino (Gaëlino M'Bani) et Calbo (Calboni M'Bani).Le groupe publie son premier album, « Quelques Gouttes Suffisent... » ; l'album atteint les classements musicaux français, est certifié double disque d'or et popularise, de par sa couverture, la marque Lacoste dans la culture urbaine1.Ärsenik est célèbre pour l’utilisation de l'onomatopée « tch tch » devenue la signature des deux frères.",
+            "imagePerso": "../../img/ficheArsenik.jpg"
         },
         {
-            "name":"Fonky Family",
-            "miniDescription":"La Fonky Family est un groupe de hip-hop français, originaire de Marseille, dans les Bouches-du-Rhône. Formé en 1994.",
-            "image": "../../img/fonkFamilly.jpg"
+            "name": "Fonky Family",
+            "miniDescription": "La Fonky Family est un groupe de hip-hop français, originaire de Marseille, dans les Bouches-du-Rhône. Formé en 1994.",
+            "image": "../../img/fonkFamilly.jpg",
+            "lien": "./fonky.html",
+            "description": "La Fonky Family est un groupe de hip-hop français, originaire de Marseille, dans les Bouches-du-Rhône. Formé en 1994, il est composé du Rat Luciano (Christophe Carmona), Sat l'Artificier (Karim Haddouche), Don Choa (François Dilhan), Menzo (Mohamed Ali), Pone (Guilhem Gallart), Fel (Karim Laoubi) et DJ Djel (Djelalli El-Ouzeri), qui a marqué les débuts du rap français dans les années 1990 et 2000. C'est pour la première partie d'un concert de Sens Unik que se forme le groupe de rap marseillais Fonky Family.Durant l'été 1997 la Fonky Family enregistre son tout premier album, et en janvier 1998 sort Si Dieu veut..., qui devient rapidement disque d'or, jusqu'à atteindre le statut de double disque d'or courant 1998. Il est suivi de l'album Art de Rue, publié en mars 2001. Le dernier album, Marginale Musique, est publié en 2006. Le groupe se sépare en 2007, chaque membre du groupe poursuivant désormais une carrière en solo. La Fonky Family compte, en 2006, deux disques de platine, et trois disques d'or1.",
+            "imagePerso": "../../img/fonkyFiche.png"
         },
         {
-            "name":"Section d'assaut",
+            "name": "Sexion d'assaut",
             "miniDescription": "Sexion d'Assaut est un groupe de hip-hop français originaire de Paris. Formé en 2002, il se compose actuellement de huit MC's : Gims, Lefa, Barack Adama, Maska, Doomams, JR O Chrome, Black M et L.I.O Pétrodollars",
-            "image": "../../img/assaut.jpg"
+            "image": "../../img/assaut.jpg",
+            "lien": "./assaut.html",
+            "description": "Sexion d'Assaut est un groupe de hip-hop fran\u00E7ais originaire de Paris. Form\u00E9 en 2002, il se compose actuellement de huit MC's : Gims, Lefa, Barack Adama, Maska, Doomams, JR O Chrome, Black M et L.I.O P\u00E9trodollars.\r\n\r\nLe groupe publie son premier album studio intitul\u00E9 L'\u00C9cole des points vitaux en mars 2010. Il suit d'un deuxi\u00E8me album studio intitul\u00E9 L'Apog\u00E9e, qui vaut \u00E0 Sexion d'Assaut deux NRJ Music Awards le 26 janvier 2013, dans les cat\u00E9gories groupe\/duo francophone de l'ann\u00E9e et chanson francophone de l'ann\u00E9e pour Avant qu'elle parte. \u00C0 la suite de l'immense succ\u00E8s de L'Apog\u00E9e, tous les membres du groupe d\u00E9cident de se lancer dans une carri\u00E8re solo.",
+            "imagePerso": "../../img/sexionFiche.jpg"
         }
     ]
 }

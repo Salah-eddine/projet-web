@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style1/index.css">
 </head>
+
 <body>
     <header class="header">
-        
-            <ul class="stylesNav">
-                <li>Style 1</li>
-                <li>Style 2</li>
-                <li>Style 3</li>
-                <li>Style 4</li>
-            </ul>
+
+        <ul class="stylesNav">
+            <li>Style 1</li>
+            <li>Style 2</li>
+            <li>Style 3</li>
+            <li>Style 4</li>
+        </ul>
         </div>
-  
+
     </header>
     <div class="content">
-        <div class= "choiceGroups">    
-            <a href="./html/rap/rapGroups.html"><img src="./img/mainRap.jpeg" alt="Rap" ></a>  
-            
-          <a href="./html/jazz/jazzGroups.html"><img src="./img/mainJazz.jpg" alt="Jazz" ></a>       
+        <div class="choiceGroups">
+            <a href="./html/rap/rapGroups.html"><img src="./img/mainRap.jpeg" alt="Rap"></a>
+
+            <a href="./html/jazz/jazzGroups.html"><img src="./img/mainJazz.jpg" alt="Jazz"></a>
         </div>
     </div>
     <h2>The XMLHttpRequest Object</h2>
 
-<button type="button" onclick="loadDoc()">Request data</button>
+    <button type="button" onclick="loadDoc()">Request data</button>
 
-<p id="demo"></p>
+    <p id="demo"></p>
     <script>
-        
-        function loadDoc(){
-         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function()
-        {
-            if(this.readyState == 4 && this.status == 200)
-            {
-                document.getElementById("demo").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET","./group.json",false);
-        xmlhttp.send();
-    }
+        function loadDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var textt = JSON.parse(this.responseText)
+                    console.log("sa")
+                    document.getElementById("demo").innerHTML = textt.iam.length;
+                }
+            };
+            xmlhttp.open("GET", "./json/discograohie.json", true);
+            xmlhttp.send();
+        }
     </script>
 </body>
+
 </html>
