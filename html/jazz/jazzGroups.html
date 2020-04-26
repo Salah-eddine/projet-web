@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style1/jazzGroups.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    ...
-    <table>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+
+<body onload="ajaxRequest('../../json/groups.json', getJazzGroups)">
+    <header class="jazzBan"></header>
+    <div class="container">
+        <div class="groups-liste">
+            <p>Liste des groupes</p>
+        </div>
+        <div id="info-groups">
+            <div class="raw">
+
+                <div>
+
+                    <a href=""><img src="" alt=""> <br></a>
+                    <p></p>
+                </div>
+
+                <div>
+                    <a href=""><img src="" alt=""> <br></a>
+                    <p></p>
+                </div>
+                <div>
+                    <a href=""><img src="" alt=""> <br></a>
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="raw">
+                <div>
+                    <a href=""><img src="" alt=""> <br></a>
+                    <p></p>
+                </div>
+                <div>
+                    <a href=""><img src="" alt=""> <br></a>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../../js/jazz/jazGroups.js"></script>
 </body>
+
 </html>

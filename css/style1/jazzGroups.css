@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+}
+
+.jazzBan {
+    background-image: url("../../img/jazzBaniere.jpg");
+    /* background-repeat: no-repeat; */
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.groups-liste {
+    text-align: center;
+    font-family: 'Chango', cursive;
+    font-size: 50px;
+}
+
+.raw>div {
+    float: left;
+    width: 28.33%;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Viga', sans-serif;
+}
+
+#containerPerso>div {
+    text-align: center;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+}
+
+.span1 {
+    color: gray;
+}
+
+.ficheImg {
+    padding-top: 15px;
+}
+
+.disco {
+    padding-bottom: 30px;
+}
+
+#Img {
+    height: 500px;
+    width: 700px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style1/jazzGroups.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body onload="ajaxRequest('../../json/groups.json', getJazz)">
+    <div id="containerPerso" class="container">
+        <div>
+            <img class="ficheImg" id="Img" src="" alt="">
+        </div>
+
+        <div>
+            <h1>Description</h1>
+            <p id="iamDescription"></p>
+            <h1>Discographie</h1>
+            <div class="disco" id="disco">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="../../js/jazz/jazGroups.js">
+    </script>
+</body>
+
+</html>
