@@ -1,5 +1,6 @@
 /* La méthode getRapGroups() va recuper les info des groupes de rap et va les manipuler avec du dom afin de les afficher.*/
-
+var cook = document.cookie = "key=value;"
+console.log(cook);
 
 function getRapGroups(xhttp) {
     var imgContainer = document.getElementById("info-groups");
