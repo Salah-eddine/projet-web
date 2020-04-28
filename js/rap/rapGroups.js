@@ -1,8 +1,81 @@
-/* La méthode getRapGroups() va recuper les info des groupes de rap et va les manipuler avec du dom afin de les afficher.*/
-var cook = document.cookie = "key=value;"
-console.log(cook);
+var header = document.getElementsByTagName("header");
+var langs = document.createElement("div");
+var burger = document.createElement("div");
+var langns = document.createElement("div");
+var icon = document.createElement("img");
+var fr = document.createElement("img");
+var nl = document.createElement("img");
+var en = document.createElement("img");
+icon.setAttribute("src", "../../img/extensible-markup-language.png");
+fr.setAttribute("src", "../../img/france.png");
+nl.setAttribute("src", "../../img/netherlands.png");
+en.setAttribute("src", "../../img/united-states-of-america.png");
+burger.appendChild(icon);
+langns.appendChild(fr);
+langns.appendChild(nl);
+langns.appendChild(en);
+langs.appendChild(burger);
+langs.appendChild(langns);
+burger.style.background = "white";
+langs.style.width = "max-content";
+langns.style.display = "none";
+langns.style.flexDirection = "column";
+langs.style.float = "right";
+langs.style.marginTop = "15px";
+langs.style.marginRight = "15px";
+header[0].appendChild(langs);
 
+icon.onclick = togleLangs;
+fr.onclick = french;
+en.onclick = english;
+nl.onclick = nederlands;
+
+
+var cookies = document.cookie = "langue=nl;style=white;";
+
+function french() {
+
+}
+
+function english() {
+    cookies = document.cookie = "langue=en;style=white;"
+}
+
+function nederlands() {
+    cookies = document.cookie = " langue=nl;style=white"
+}
+
+function togleLangs() {
+    if (langns.style.display === "flex") {
+        langns.style.display = "none";
+    } else {
+        langns.style.display = "flex";
+    }
+}
+
+/* La méthode getRapGroups() va recuper les info des groupes de rap et va les manipuler avec du dom afin de les afficher.*/
 function getRapGroups(xhttp) {
+    var petiteDesc;
+    var desc;
+    var cookie = cookies.split(";");
+    switch (cookie[0]) {
+        case "langue=nl":
+            petiteDesc = "miniDescriptionNl";
+            desc = "descriptionNl";
+            break;
+        case "langue=en":
+            petiteDesc = "miniDescriptionEn";
+            desc = "descriptionEn";
+            break;
+        case "langue=fr":
+            petiteDesc = "miniDescription";
+            desc = "description";
+            break;
+        default:
+            petiteDesc = "miniDescription";
+            desc = "description";
+
+    }
     var imgContainer = document.getElementById("info-groups");
     var arrimg = imgContainer.getElementsByTagName("img");
     var arrDescription = imgContainer.getElementsByTagName("p");
@@ -10,7 +83,7 @@ function getRapGroups(xhttp) {
     var rgroups = xhttp;
     for (i = 0; i < rgroups.rapGroups.length; i++) {
         arrimg[i].setAttribute("src", rgroups.rapGroups[i].image);
-        arrDescription[i].innerHTML = rgroups.rapGroups[i].miniDescription;
+        arrDescription[i].innerHTML = rgroups.rapGroups[i][petiteDesc];
         arrimg[i].style.width = "284px";
         arrimg[i].style.height = "177px";
         arrLink[i].setAttribute("href", rgroups.rapGroups[i].lien);
