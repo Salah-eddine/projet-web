@@ -1,81 +1,19 @@
-var header = document.getElementsByTagName("header");
-var langs = document.createElement("div");
-var burger = document.createElement("div");
-var langns = document.createElement("div");
-var icon = document.createElement("img");
-var fr = document.createElement("img");
-var nl = document.createElement("img");
-var en = document.createElement("img");
-icon.setAttribute("src", "../../img/extensible-markup-language.png");
-fr.setAttribute("src", "../../img/france.png");
-nl.setAttribute("src", "../../img/netherlands.png");
-en.setAttribute("src", "../../img/united-states-of-america.png");
-burger.appendChild(icon);
-langns.appendChild(fr);
-langns.appendChild(nl);
-langns.appendChild(en);
-langs.appendChild(burger);
-langs.appendChild(langns);
-burger.style.background = "white";
-langs.style.width = "max-content";
-langns.style.display = "none";
-langns.style.flexDirection = "column";
-langs.style.float = "right";
-langs.style.marginTop = "15px";
-langs.style.marginRight = "15px";
-header[0].appendChild(langs);
-
-icon.onclick = togleLangs;
-fr.onclick = french;
-en.onclick = english;
-nl.onclick = nederlands;
+var cookies = document.cookie = "langue=Fr;style=white"
 
 
-var cookies = document.cookie = "langue=nl;style=white;";
 
-function french() {
 
-}
+var sa = 0
 
-function english() {
-    cookies = document.cookie = "langue=en;style=white;"
-}
 
-function nederlands() {
-    cookies = document.cookie = " langue=nl;style=white"
-}
 
-function togleLangs() {
-    if (langns.style.display === "flex") {
-        langns.style.display = "none";
-    } else {
-        langns.style.display = "flex";
-    }
-}
+
+
 
 /* La méthode getRapGroups() va recuper les info des groupes de rap et va les manipuler avec du dom afin de les afficher.*/
 function getRapGroups(xhttp) {
-    var petiteDesc;
-    var desc;
-    var cookie = cookies.split(";");
-    switch (cookie[0]) {
-        case "langue=nl":
-            petiteDesc = "miniDescriptionNl";
-            desc = "descriptionNl";
-            break;
-        case "langue=en":
-            petiteDesc = "miniDescriptionEn";
-            desc = "descriptionEn";
-            break;
-        case "langue=fr":
-            petiteDesc = "miniDescription";
-            desc = "description";
-            break;
-        default:
-            petiteDesc = "miniDescription";
-            desc = "description";
+    var langue = getLangvalue()
 
-    }
     var imgContainer = document.getElementById("info-groups");
     var arrimg = imgContainer.getElementsByTagName("img");
     var arrDescription = imgContainer.getElementsByTagName("p");
@@ -83,11 +21,12 @@ function getRapGroups(xhttp) {
     var rgroups = xhttp;
     for (i = 0; i < rgroups.rapGroups.length; i++) {
         arrimg[i].setAttribute("src", rgroups.rapGroups[i].image);
-        arrDescription[i].innerHTML = rgroups.rapGroups[i][petiteDesc];
+        arrDescription[i].innerHTML = rgroups.rapGroups[i]["miniDescription" + langue];
         arrimg[i].style.width = "284px";
         arrimg[i].style.height = "177px";
         arrLink[i].setAttribute("href", rgroups.rapGroups[i].lien);
     }
+
 }
 
 
@@ -95,8 +34,9 @@ function getRapGroups(xhttp) {
 
 /* La méthode getIam() va recuperer dans le serveur les information concernant le groupe Iam et va les afficher avec du dom dans le neviguateur*/
 function getIam(response) {
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
+    sa++;
+    var langue = getLangvalue();
+    var page = getPage();
     var i;
     switch (page) {
         case "iam.html":
@@ -120,34 +60,18 @@ function getIam(response) {
     }
     var iamImage = document.getElementById("Img");
     var iamDescription = document.getElementById("iamDescription");
-    iamDescription.innerHTML = response.rapGroups[i].description;
+    iamDescription.innerHTML = response.rapGroups[i]["description" + langue];
     iamImage.setAttribute("src", response.rapGroups[i].imagePerso);
-    ajaxRequest("../../json/discographie.json", getdisco, response.rapGroups[i].name);
-}
-
-function getdisco(response, nom) {
-
-
-    var discographie = document.getElementById("disco");
-
-    for (i = 0; i < response[nom].length; i++) {
-
-        discographie.innerHTML += "<span class='span1'>" + response[nom][i].date + "</span>" + ": " + "<span class='span2'>" + response[nom][i].titre + "</span>" + "<br>"
+    if (sa <= 1) {
+        ajaxRequest("../../json/discographie.json", getdisco, response.rapGroups[i].name);
     }
-
 
 
 }
 
-/*La méthode ajaxRequest()  fait une requête ajax  pour recuperer un fichier json passer en paramètre. Elle retourne la réponse de la requête*/
-function ajaxRequest(url, fonction, args = "0") {
-    var xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            fonction(JSON.parse(this.responseText), args);
-        }
-    }
-    xhr.open("GET", url, true);
-    xhr.send();
+
+
+function postCookie() {
+
 }
